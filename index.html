@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBeing</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ 
+</head>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="bg-green-700 relative z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="#" class="text-yellow-300 text-2xl font-bold">GreenBeing</a>
+        <div class="hidden md:flex space-x-6">
+          <!-- Grouped Dropdown -->
+           <a href="#resources" class="text-yellow-200 hover:text-white text-xl">Home</a>
+          <div class="relative group focus-within:block">
+            <button class="text-yellow-200 hover:text-white focus:outline-none text-xl">Empowerment</button>
+            <div class="absolute hidden group-hover:block group-focus-within:block bg-white text-sm text-gray-800 mt-2 py-2 rounded shadow-lg z-50 max-h-60 overflow-y-auto min-w-[200px]">
+              <a href="#opportunities" class="block px-4 py-2 hover:bg-gray-100 ">Opportunities</a>
+              <a href="#education" class="block px-4 py-2 hover:bg-gray-100 ">Education & Skills</a>
+              <a href="#entrepreneurship" class="block px-4 py-2 hover:bg-gray-100">Entrepreneurship</a>
+              <a href="#wellness" class="block px-4 py-2 hover:bg-gray-100">Mental Health & Wellness</a>
+              <a href="#community" class="block px-4 py-2 hover:bg-gray-100">Community Voices</a>
+              <a href="#events" class="block px-4 py-2 hover:bg-gray-100">Events & Challenges</a>
+            </div>
+          </div>
+          <a href="#resources" class="text-yellow-200 hover:text-white text-xl">Resources</a>
+          <a href="#about" class="text-yellow-200 hover:text-white text-xl">About Us</a>
+          <a href="#blog" class="text-yellow-200 hover:text-white text-xl">Blog</a>
+          <a href="#contact" class="text-yellow-200 hover:text-white text-xl">Contact</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-yellow-200 focus:outline-none" aria-label="Open menu">
+            <span class="sr-only">Open menu</span>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-green-600 px-4 py-2 space-y-1">
+      <a href="#resources" class="text-yellow-200 hover:text-white">Home</a>
+      <a href="#opportunities" class="block text-yellow-100 hover:text-white">Opportunities</a>
+      <a href="#education" class="block text-yellow-100 hover:text-white">Education & Skills</a>
+      <a href="#entrepreneurship" class="block text-yellow-100 hover:text-white">Entrepreneurship</a>
+      <a href="#wellness" class="block text-yellow-100 hover:text-white">Mental Health & Wellness</a>
+      <a href="#community" class="block text-yellow-100 hover:text-white">Community Voices</a>
+      <a href="#events" class="block text-yellow-100 hover:text-white">Events & Challenges</a>
+      <a href="#resources" class="block text-yellow-100 hover:text-white">Resources</a>
+      <a href="#about" class="block text-yellow-100 hover:text-white">About Us</a>
+      <a href="#blog" class="block text-yellow-100 hover:text-white">Blog</a>
+      <a href="#contact" class="block text-yellow-100 hover:text-white">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  
+<section class="bg-gradient-to-br from-white py-20 px-4 sm:px-6 lg:px-8 text-center animate-fade-in" id="home">
+  <div class="max-w-4xl mx-auto">
+    
+    <!-- Animated Heading -->
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-green-700 mb-6 animate-fade-in">
+      Empowering South African Youth
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed">
+      To empower South African youth by providing an online hub of free resources, tips, and practical tools that inspire personal growth, entrepreneurship, and community upliftment, rooted in authenticity, accessibility, and local relevance.
+    </p>
+
+    <!-- CTA Button -->
+    <a href="#opportunities" class="inline-block bg-yellow-300 text-green-900 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-yellow-400 hover:scale-105 transform transition duration-300">
+      Start Your Journey Here
+    </a>
+
+    <!-- Optional Hero Image -->
+    <img src="./pexels-vanessa-loring-7869229.jpg" alt="South African youth using technology"
+         class="w-full max-w-md mx-auto mt-12 rounded-lg shadow-md" loading="lazy">
+  </div>
+</section>
+
+
+
+  <!-- Start Here Section -->
+  <section class="bg-gray-100 py-16 px-6 sm:px-8 lg:px-16">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-extrabold text-green-700 mb-12">Explore What's Waiting for You</h2>
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Card 1 -->
+        <article class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 focus-within:ring-2 focus-within:ring-green-500">
+          <div class="text-green-600 text-5xl mb-4 transition-transform duration-300 hover:scale-110">
+            💰
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Financial Literacy</h3>
+          <p class="text-gray-600 mb-4 leading-relaxed text-sm">Learn how to manage your money, budget, and plan for a stable future.</p>
+          <a href="#resources" class="inline-block text-green-700 font-semibold hover:underline focus:outline-none">Explore Resources</a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 focus-within:ring-2 focus-within:ring-green-500">
+          <div class="text-green-600 text-5xl mb-4 transition-transform duration-300 hover:scale-110">
+            🌱
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Personal Growth</h3>
+          <p class="text-gray-600 mb-4 leading-relaxed text-sm">Tips and guides to help you build confidence and navigate life’s challenges.</p>
+          <a href="#blog" class="inline-block text-green-700 font-semibold hover:underline focus:outline-none">Learn More</a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 focus-within:ring-2 focus-within:ring-green-500">
+          <div class="text-green-600 text-5xl mb-4 transition-transform duration-300 hover:scale-110">
+            🧠
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Skills Development</h3>
+          <p class="text-gray-600 mb-4 leading-relaxed text-sm">Upskill with digital tools, free courses, and work-ready knowledge.</p>
+          <a href="#education" class="inline-block text-green-700 font-semibold hover:underline focus:outline-none">Get Started</a>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 focus-within:ring-2 focus-within:ring-green-500">
+          <div class="text-green-600 text-5xl mb-4 transition-transform duration-300 hover:scale-110">
+            💖
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Mental Health</h3>
+          <p class="text-gray-600 mb-4 leading-relaxed text-sm">Access support, tips, and safe spaces to prioritise your wellbeing.</p>
+          <a href="#wellness" class="inline-block text-green-700 font-semibold hover:underline focus:outline-none">Access Support</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!--Tech Skills-->
+  <section class="bg-white py-16 px-6 sm:px-12 lg:px-24">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl font-extrabold text-green-700 mb-4">Learn Tech, Build Your Future</h2>
+    <p class="text-gray-700 mb-12 max-w-3xl mx-auto">
+      To inspire South African youth to explore digital skills and show how tech can unlock new opportunities.
+    </p>
+    <div class="grid gap-10 sm:grid-cols-1 md:grid-cols-3">
+      
+      <!-- Card 1: Youth Coding -->
+      <div class="bg-gray-50 rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
+        <div class="text-green-600 mb-4 text-6xl">💻</div>
+        <h3 class="text-xl font-semibold mb-2">Youth Coding</h3>
+        <p class="text-gray-600 mb-4">Engage with coding tutorials and projects using laptops and mobile devices.</p>
+        <a href="#coding" class="inline-block text-green-700 font-semibold hover:underline focus:outline-none">Explore Coding</a>
+      </div>
+
+      <!-- Card 2: Canva Designs -->
+      <div class="bg-gray-50 rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
+        <div class="text-green-600 mb-4 text-6xl">🎨</div>
+        <h3 class="text-xl font-semibold mb-2">Canva Designs</h3>
+        <p class="text-gray-600 mb-4">Learn to create eye-catching flyers, CVs, and social media posts with Canva.</p>
+        <a href="#canva" class="inline-block text-green-700 font-semibold hover:underline focus:outline-none">Start Designing</a>
+      </div>
+
+      <!-- Card 3: AI Tools -->
+      <div class="bg-gray-50 rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
+        <div class="text-green-600 mb-4 text-6xl">🤖</div>
+        <h3 class="text-xl font-semibold mb-2">AI Tools in Action</h3>
+        <p class="text-gray-600 mb-4">Discover how chatbots, content creation, and other AI tools can boost your skills.</p>
+        <a href="#ai" class="inline-block text-green-700 font-semibold hover:underline focus:outline-none">Learn More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+ <footer class="bg-green-800 text-yellow-200 py-12 px-6 sm:px-12 lg:px-24">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+    <!-- Navigation Links -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Navigate</h3>
+      <nav class="flex flex-col space-y-2 text-yellow-100">
+        <a href="#resources" class="hover:text-white">Home</a>
+        <a href="#opportunities" class="hover:text-white">Opportunities</a>
+        <a href="#education" class="hover:text-white">Education & Skills</a>
+        <a href="#entrepreneurship" class="hover:text-white">Entrepreneurship</a>
+        <a href="#wellness" class="hover:text-white">Mental Health & Wellness</a>
+        <a href="#community" class="hover:text-white">Community Voices</a>
+        <a href="#events" class="hover:text-white">Events & Challenges</a>
+        <a href="#resources" class="hover:text-white">Resources</a>
+        <a href="#about" class="hover:text-white">About Us</a>
+        <a href="#blog" class="hover:text-white">Blog</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+      <div class="flex flex-wrap gap-4 text-yellow-100">
+        <!-- Instagram -->
+        <a href="https://instagram.com" class="flex items-center gap-2 hover:text-white" aria-label="Instagram">
+          <img src="./5296765_camera_instagram_instagram logo_icon.svg" alt="" class="social-icon">
+          <span class="text-sm hidden sm:inline">Instagram</span>
+        </a>
+        <!-- Facebook -->
+        <a href="https://facebook.com" class="flex items-center gap-2 hover:text-white" aria-label="Facebook">
+          <img src="./5296499_fb_facebook_facebook logo_icon.png" alt="" class="social-icon">
+          <span class="text-sm hidden sm:inline">Facebook</span>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com" class="flex items-center gap-2 hover:text-white" aria-label="LinkedIn">
+          <img src="./5296501_linkedin_network_linkedin logo_icon.svg" alt="" class="social-icon">
+          <span class="text-sm hidden sm:inline">LinkedIn</span>
+        </a>
+        <!-- Twitter -->
+        <a href="https://twitter.com" class="flex items-center gap-2 hover:text-white" aria-label="Twitter">
+          <img src="./5296514_bird_tweet_twitter_twitter logo_icon.svg" alt="" class="social-icon">
+          <span class="text-sm hidden sm:inline">Twitter</span>
+        </a>
+        <!-- TikTok -->
+        <a href="https://tiktok.com" class="flex items-center gap-2 hover:text-white" aria-label="TikTok">
+          <img src="./tik-tok_3046121.png" alt="" class="social-icon">
+          <span class="text-sm hidden sm:inline">TikTok</span>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/27831234567" class="flex items-center gap-2 hover:text-white" aria-label="WhatsApp">
+          <img src="./4102606_applications_media_social_whatsapp_icon.svg" alt="" class="social-icon">
+          <span class="text-sm hidden sm:inline">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="md:col-span-2">
+      <h3 class="text-xl font-semibold mb-4">Subscribe to Our Newsletter</h3>
+      <form class="flex flex-col sm:flex-row sm:items-center gap-4">
+        <label for="email" class="sr-only">Email address</label>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Enter your email"
+          class="w-full px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-300"
+        />
+        <button type="submit" class="bg-yellow-300 text-green-900 font-semibold px-6 py-3 rounded-md hover:bg-yellow-400 transition">
+          Subscribe
+        </button>
+      </form>
+      <p class="mt-4 text-yellow-200 text-sm max-w-md">
+        Get updates on free courses, job tips, and youth resources.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="mt-12 border-t border-green-600 pt-6 text-center text-yellow-300 text-sm">
+    &copy; 2025 GreenBeing. All rights reserved.
+  </div>
+</footer>
+
+    
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
